@@ -13,3 +13,10 @@ pandas 1.3.5
 numpy 1.21.5
 scipy 1.7.3
 
+Run STMGCN on the example data
+====
+python DLPFC.py
+
+ Example dataset download
+ ====
+ Download 151673 slice in the DLPFC dataset at https://drive.google.com/file/d/1ZdARgLFQLaQnQLptED83eUhiuZczpXa3/view?usp=sharing
