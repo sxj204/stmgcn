@@ -1,5 +1,5 @@
 # Identifying spatial domains of spatially resolved transcriptomics via multi-view graph convolutional networks
-===
+
 Overview
 ===
 
