@@ -19,4 +19,4 @@ python DLPFC.py
 
  Example dataset download
  ====
- Download 151673 slice in the DLPFC dataset at https://drive.google.com/file/d/1ZdARgLFQLaQnQLptED83eUhiuZczpXa3/view?usp=sharing
+ Download 151673 slice in the DLPFC dataset at https://drive.google.com/drive/folders/15qdjxIdIYRaGVOUF3FZ7ogRfgBZcvzSC?usp=sharing
