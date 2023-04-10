@@ -7,11 +7,11 @@ STMGCN is a novel deep computational framework that effectively integrates spati
 
 Requirements
 ===
-torch 1.11.0
-scanpy 1.9.1
-pandas 1.3.5
-numpy 1.21.5
-scipy 1.7.3
+torch = 1.11.0,
+scanpy = 1.9.1,
+pandas = 1.3.5,
+numpy = 1.21.5,
+scipy = 1.7.3
 
 Run STMGCN on the example data
 ====
