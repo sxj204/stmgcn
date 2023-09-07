@@ -11,8 +11,6 @@ import torch.optim as optim
 from torch.nn.parameter import Parameter
 from anndata import AnnData
 import torch
-from sklearn.metrics.cluster import normalized_mutual_info_score as nmi_score
-from sklearn.metrics import adjusted_rand_score as ari_score
 from sklearn.cluster import KMeans
 from util import *
 import torch.nn as nn
@@ -103,12 +101,7 @@ def train_MSpaGCN(opts):
     embeddings = pd.DataFrame(x.detach().cpu().numpy())
     embeddings.index = features_adata.obs_names
     features_adata.obsm[key_added] = embeddings.loc[features_adata.obs_names,].values
-    features_adata.obs["pred"] = y_pred
-    features_adata.obs["pred"] = features_adata.obs["pred"].astype('category')
-
-    ARI = ari_score(y,y_pred)
-    nmi = nmi_score(y, y_pred)
-    print('nmi {:.4f}'.format(nmi),',ari {:.4f}'.format(ARI))
+  
     #plot spatial
     plt.rcParams["figure.figsize"] = (6, 3)
     sc.pl.spatial(features_adata,color=["pred", "Ground Truth"], title=['STMGCN (ARI=%.3f)' % ARI,'Ground Truth'],na_in_legend = False,show=True)
